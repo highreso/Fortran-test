@@ -5,7 +5,6 @@
 ## 最終成果物
 1. ユークリッド互除法？(gcd.f90, PDF 9.3) --- 配列が含まれず -> これにしよう, 配列の解説も一応やる
 nvfortran -acc -O2 -Minfo=accel -o gcd_with_system_clock_OpenACC  gcd_with_system_clock_OpenACC.f90
-2. 
 
 https://github.com/highreso/OpenACC-intro-test/blob/master/laplace2.f90
 
@@ -43,3 +42,4 @@ NewFunc.f90
 input.f90
 
 ### 配列
+arraytest.f90
