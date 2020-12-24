@@ -37,6 +37,16 @@ NewFunc.f90
 
 ### 条件分岐(if)
 NewFunc.f90
+```Fortran
+! クリスマスの予定あるなしを0,1で指定して応じて煽り文
+
+if (isAnyPlanExist == 0) then
+    str = '筆者と一緒ですね！'
+else
+    str = '楽しんで下さいね！（血涙）'
+end if
+print *, str
+```
 
 ### 入力(キーボードから入力を受け付けるプログラム)
 input.f90
