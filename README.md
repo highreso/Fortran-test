@@ -43,3 +43,19 @@ input.f90
 
 ### 配列
 arraytest.f90
+
+## OpenACC
+nvfortran  jacobi-method.f90 -o jacobi-method_withoutOpenACC
+nvfortran -acc -O2 -Minfo=accel jacobi-method.f90 -o jacobi-method_withOpenACC
+
+### 実行結果
+- OpenACCを用いずコンパイル
+```bash
+./jacobi-method_withoutOpenACC 
+# 162.4811730000000      sec
+```
+
+```bash
+./jacobi-method_withOpenACC
+# 56.15774000000000      sec
+```
