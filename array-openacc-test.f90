@@ -11,8 +11,8 @@ program main
   !$acc kernels
   do j = 0, 9999
     do i = 0, 9999
-      A(i, j) = 0
-      ! print *, A(i, j)
+      A(j,i) = 0
+      ! print *, A(j, i)
     end do
   end do
   !$acc end kernels
